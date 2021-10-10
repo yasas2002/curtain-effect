@@ -1,4 +1,4 @@
-var timeLeft = 30;
+var timeLeft = 15;
 var elem = document.getElementById('Timer');
 
 var timerId = setInterval(countdown, 1000);
