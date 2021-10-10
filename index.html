@@ -1,0 +1,117 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width">
+   <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+  <title>JS Bin</title>
+</head>
+<script>
+</script>
+<style>
+.curtain {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.curtain__wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.curtain__panel {
+    background-image: url("frontcurtain.jpg");
+
+  width: 50%;
+  height: 100vh;
+  float: left;
+  position: relative;
+  z-index: 2;
+  transition: all 1s ease-out;
+}
+
+.curtain__panel--left {
+  transform: translateX(-100%);
+}
+
+.curtain__panel--right {
+  transform: translateX(100%);
+}
+
+.curtain__prize {
+
+  background: linear-gradient(to right, #00bf8f, #001510);
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main{
+ img {
+  width: 0%;
+  height: auto;
+}
+}
+
+input[type=checkbox] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  opacity: 0;
+}
+
+input[type=checkbox]:checked ~ div.curtain__panel--left {
+  transform: translateX(0);
+}
+
+input[type=checkbox]:checked ~ div.curtain__panel--right {
+  transform: translateX(0);
+}
+
+img {
+  width: 55vw;
+  height: 55vh;
+}
+
+</style>
+<body>
+  <div class="curtain">
+    <div class="curtain__wrapper">
+      <input type="checkbox" checked>
+      <div class="curtain__panel curtain__panel--left">
+
+      </div>
+      <div class="curtain__prize">
+      
+   
+    
+        <meta http-equiv="refresh" content="15;url=https://inspiring-easley-782693.netlify.app/team" />
+<h1>
+
+<font face="Algerian" color="white">Welcome to Website Launch</font>
+<br>   <br>
+<div class ="main"><img src="unnamed.jpg"></div>
+<br><br>   <br>
+       <div id="Timer">
+       
+       </div></h1>
+
+      </div>
+      <div class="curtain__panel curtain__panel--right">
+
+      </div>
+      
+
+    </div>
+  </div>
+</body>
+
+</html>
